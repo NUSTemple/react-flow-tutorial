@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => {
+const Sidebar = () => {
   const onDragStart = (event, nodeType) => {
     event.dataTransfer.setData('application/reactflow', nodeType);
     event.dataTransfer.effectAllowed = 'move';
@@ -18,6 +18,11 @@ export default () => {
       <div className="dndnode output" onDragStart={(event) => onDragStart(event, 'output')} draggable>
         Output Node
       </div>
+      <div className="dndnode basenode" onDragStart={(event) => onDragStart(event, 'baseNode')} draggable>
+        basenode Node
+      </div>
     </aside>
   );
 };
+
+export default Sidebar;

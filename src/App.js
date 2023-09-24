@@ -9,8 +9,10 @@ import ReactFlow, {
 import 'reactflow/dist/style.css';
 
 import Sidebar from './components/Sidebar';
+import BaseNode from './components/nodes/Basenode.js';
 
 import './index.css';
+import './App.css';
 
 const initialNodes = [
   {
@@ -20,6 +22,9 @@ const initialNodes = [
     position: { x: 250, y: 5 },
   },
 ];
+
+const nodeTypes = { baseNode: BaseNode };
+
 
 let id = 0;
 const getId = () => `dndnode_${id++}`;
@@ -68,6 +73,7 @@ const DnDFlow = () => {
   return (
     <div className="dndflow">
       <ReactFlowProvider>
+      <Sidebar />
         <div className="reactflow-wrapper" ref={reactFlowWrapper}>
           <ReactFlow
             nodes={nodes}
@@ -78,16 +84,16 @@ const DnDFlow = () => {
             onInit={setReactFlowInstance}
             onDrop={onDrop}
             onDragOver={onDragOver}
+            nodeTypes={nodeTypes}
             fitView
           >
             <Controls />
           </ReactFlow>
         </div>
-        <Sidebar />
+        
       </ReactFlowProvider>
     </div>
   );
 };
 
 export default DnDFlow;
-

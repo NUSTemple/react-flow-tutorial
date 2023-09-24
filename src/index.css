@@ -36,6 +36,10 @@
   border-color: #ff0072;
 }
 
+.dndflow .dndnode.basenode {
+  border-color: black;
+}
+
 .dndflow .reactflow-wrapper {
   flex-grow: 1;
   height: 100%;
