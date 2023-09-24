@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+ <img width=200px height=200px src="./doc/logo.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">react-flow-tutorial</h3>
@@ -11,7 +11,7 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> This repo is to create a low code platform for Airflow development. 
     <br> 
 </p>
 
@@ -29,7 +29,9 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+This repo is to create a low code platform for Airflow development. It should be able to drag and drop to create airflow tasks. All required parameters should be as input dropdown or selection as node. This repo will mainly use reactflow library for development.
+
+Currently we development airflow job by writting python script. 
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -39,8 +41,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them.
 
-```
-Give examples
+```shell
+npm install reactflow
 ```
 
 ### Installing
@@ -50,16 +52,8 @@ A step by step series of examples that tell you how to get a development env run
 Say what the step will be
 
 ```
-Give the example
+npm start dev
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
 
 ## 🔧 Running the tests <a name = "tests"></a>
 
@@ -98,9 +92,7 @@ Add additional notes about how to deploy this on a live system.
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
